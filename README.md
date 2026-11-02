@@ -4,7 +4,7 @@
 
 Amateur-radio chat for macOS with **modem73 and Xara bundled inside the app**. Select an engine in Station Settings; EtherChat II starts and stops it. No separate Xara application or modem installation is required.
 
-## Download 1.2.3
+## Download 1.2.3 - build 47
 
 - [macOS Apple Silicon DMG](https://github.com/N4EAC/EtherChat-II/releases/download/v1.2.3/EtherChat-II-1.2.3-macOS-arm64.dmg)
 - [User manual PDF](https://github.com/N4EAC/EtherChat-II/releases/download/v1.2.3/EtherChat-II-User-Manual.pdf)
@@ -18,7 +18,7 @@ Requires macOS 13 or later on Apple Silicon. The app is ad-hoc signed and is not
 
 QST broadcast chat, channels/topics and user lists, direct conversations, CQ/SNR/73/custom macros, station beacons, Heard queries, saved contacts and favorites, an offline contact map, ADIF export for signing with TQSL, Default/CP/Crimson themes, and dockable modem activity.
 
-Modem Activity follows the selected engine. Bundled Xara supplies live audio levels, signal/protocol measurements, counters, diagnostics and a compact waterfall. **Xara Instruments…** opens authenticated, read-only local panels. The bundled Xara engine is now **0.1.3**, with upstream SSID fixes and the revised buffering/resampling and TX latency model. Its unused ARQ data listener is disabled. Modem73 retains its own activity and CAT controls. Xara does not provide RF power/SWR/ALC or per-callsign SNR through this integration; measured F2/PING reports, CAT frequency/meters and PSK Reporter uploads are unavailable with Xara.
+Modem Activity follows the selected engine. Bundled Xara supplies live audio levels, signal/protocol measurements, counters, diagnostics and a compact waterfall. **Xara Instruments…** opens authenticated, read-only local panels. The bundled Xara engine is now **0.1.3**, with upstream SSID fixes and the revised buffering/resampling and TX latency model. Its unused ARQ data listener is disabled. Modem73 retains its own activity and CAT controls. Xara does not provide RF power/SWR/ALC or per-callsign SNR through this integration; measured F2/PING reports, RF meters and PSK Reporter uploads are unavailable with Xara. With bundled Xara and rigctld PTT, EtherChat II now reads frequency/mode directly and offers **Set Frequency** with PTT checks and radio readback confirmation. FlexRadio 6xxx uses a TCP CAT host:port instead of a serial device. Xara radio audio settings include **0 to +10 dB TX amplification**, saved and applied after restarting the modem.
 
 ## Start with Xara
 
@@ -30,7 +30,7 @@ Modem Activity follows the selected engine. Bundled Xara supplies live audio lev
 
 Both stations must use compatible modem waveforms. Xara and modem73 do not decode one another. Channel/direct features require a compatible application protocol. Chat packets are unacknowledged submissions.
 
-The updated Xara workspace passed **466 tests**, with 8 hardware/capture-dependent tests skipped. macOS protocol/DSP and security regressions also passed. The bundled-library lifecycle and telemetry adapters were tested without RF. Physical radio audio, FT-710 device conversion, PTT and on-air interoperability remain to be verified by operators. Existing local settings and contacts are preserved. The sidebar title fits on one line, without a logo or powered-by banner.
+Build 47 passed targeted CAT readback/frequency-change/PTT-rejection and TX-gain configuration tests, plus app compilation, signature and disk-image verification. The unchanged bundled Xara workspace previously passed **466 tests**, with 8 hardware/capture-dependent tests skipped. macOS protocol/DSP and security regressions also passed. The bundled-library lifecycle and telemetry adapters were tested without RF. Physical radio audio, FT-710 device conversion, PTT and on-air interoperability remain to be verified by operators. Existing local settings and contacts are preserved. The sidebar title fits on one line, without a logo or powered-by banner.
 
 ## Security and privacy
 
