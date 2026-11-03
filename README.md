@@ -4,7 +4,7 @@
 
 Amateur-radio chat for macOS with **modem73 and Xara bundled inside the app**. Select an engine in Station Settings; EtherChat II starts and stops it. No separate Xara application or modem installation is required.
 
-## Download 1.2.3 - build 47
+## Download 1.2.3 - build 48
 
 - [macOS Apple Silicon DMG](https://github.com/N4EAC/EtherChat-II/releases/download/v1.2.3/EtherChat-II-1.2.3-macOS-arm64.dmg)
 - [User manual PDF](https://github.com/N4EAC/EtherChat-II/releases/download/v1.2.3/EtherChat-II-User-Manual.pdf)
@@ -30,7 +30,9 @@ Modem Activity follows the selected engine. Bundled Xara supplies live audio lev
 
 Both stations must use compatible modem waveforms. Xara and modem73 do not decode one another. Channel/direct features require a compatible application protocol. Chat packets are unacknowledged submissions.
 
-Build 47 passed targeted CAT readback/frequency-change/PTT-rejection and TX-gain configuration tests, plus app compilation, signature and disk-image verification. The unchanged bundled Xara workspace previously passed **466 tests**, with 8 hardware/capture-dependent tests skipped. macOS protocol/DSP and security regressions also passed. The bundled-library lifecycle and telemetry adapters were tested without RF. Physical radio audio, FT-710 device conversion, PTT and on-air interoperability remain to be verified by operators. Existing local settings and contacts are preserved. The sidebar title fits on one line, without a logo or powered-by banner.
+Build 48 adds an in-app **Update modem73** action: after Check Updates detects a newer compatible package, it downloads, verifies and installs the official macOS engine automatically. No manual package download is needed. A failed or incompatible update keeps the selected engine; changes apply on the next Start Modem. If configured nonzero modem73 gain is unsupported by the release, the current engine is retained with an explanation.
+
+The automatic updater passed archive/URL/checksum/compatibility and failed-update-preservation tests, including the complete official modem73 2.5.0 download/install flow in an isolated test store. Previous build 47 passed targeted CAT readback/frequency-change/PTT-rejection and TX-gain configuration tests, plus app compilation, signature and disk-image verification. The unchanged bundled Xara workspace previously passed **466 tests**, with 8 hardware/capture-dependent tests skipped. macOS protocol/DSP and security regressions also passed. The bundled-library lifecycle and telemetry adapters were tested without RF. Physical radio audio, FT-710 device conversion, PTT and on-air interoperability remain to be verified by operators. Existing local settings and contacts are preserved. The sidebar title fits on one line, without a logo or powered-by banner.
 
 ## Security and privacy
 
