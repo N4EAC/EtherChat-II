@@ -4,7 +4,7 @@
 
 Amateur-radio chat for macOS with **modem73 and Xara bundled inside the app**. Select an engine in Station Settings; EtherChat II starts and stops it. No separate Xara application or modem installation is required.
 
-## Download 1.2.3 - build 50
+## Download 1.2.3 - build 51
 
 - [macOS Apple Silicon DMG](https://github.com/N4EAC/EtherChat-II/releases/download/v1.2.3/EtherChat-II-1.2.3-macOS-arm64.dmg)
 - [User manual PDF](https://github.com/N4EAC/EtherChat-II/releases/download/v1.2.3/EtherChat-II-User-Manual.pdf)
@@ -30,7 +30,7 @@ Modem Activity follows the selected engine. Bundled Xara supplies live audio lev
 
 Both stations must use compatible modem waveforms. Xara and modem73 do not decode one another. Channel/direct features require a compatible application protocol. Chat packets are unacknowledged submissions.
 
-Build 50 makes completion explicit: **Updated and selected automatically**. The selected version stays visible. Factory/previous-engine buttons are now inside **Engine recovery (optional)**; no second selection step follows an update. **Update modem73** handle audio recovery automatically. After Check Updates, it installs a verified gain-compatible engine, closes/reopens a running idle modem's saved radio devices and confirms the saved RX/TX gain. No zeroing gains or manual audio restart is needed. A stopped modem stays stopped. A failed install or audio restoration rolls back to the preceding engine and attempts to restore its audio.
+Build 51 fixes the Station Settings layout regression: the settings viewport stays bounded, long status messages cannot grow the page, and **Engine recovery…** opens a separate sheet. Render tests cover 1040×760 and 1300×900 in Default/CP/Crimson and recovery presentation. Update completion remains explicit: **Updated and selected automatically**. The selected version stays visible. Factory/previous-engine buttons are inside the separate **Engine recovery…** sheet; no second selection step follows an update. **Update modem73** handle audio recovery automatically. After Check Updates, it installs a verified gain-compatible engine, closes/reopens a running idle modem's saved radio devices and confirms the saved RX/TX gain. No zeroing gains or manual audio restart is needed. A stopped modem stays stopped. A failed install or audio restoration rolls back to the preceding engine and attempts to restore its audio.
 
 The matching **modem73 2.5.0 EtherChat compatibility package** retains software gain, VUs, selected CoreAudio-device checks and control-safety patches. The updater retrieves it from this release after matching the upstream version and verifying its SHA-256 digest. It can also repair a previously installed stock 2.5.0 engine lacking gain support. Checks are operator-initiated and consult the upstream and EtherChat II GitHub releases; no station data, chat or audio is uploaded.
 
