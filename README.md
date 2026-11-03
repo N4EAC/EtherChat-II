@@ -4,7 +4,7 @@
 
 Amateur-radio chat for macOS with **modem73 and Xara bundled inside the app**. Select an engine in Station Settings; EtherChat II starts and stops it. No separate Xara application or modem installation is required.
 
-## Download 1.2.3 - build 51
+## Download 1.2.3 - build 53
 
 - [macOS Apple Silicon DMG](https://github.com/N4EAC/EtherChat-II/releases/download/v1.2.3/EtherChat-II-1.2.3-macOS-arm64.dmg)
 - [User manual PDF](https://github.com/N4EAC/EtherChat-II/releases/download/v1.2.3/EtherChat-II-User-Manual.pdf)
@@ -29,6 +29,10 @@ Modem Activity follows the selected engine. Bundled Xara supplies live audio lev
 5. Save and press **Start Modem**. Stop before switching engines.
 
 Both stations must use compatible modem waveforms. Xara and modem73 do not decode one another. Channel/direct features require a compatible application protocol. Chat packets are unacknowledged submissions.
+
+Build 53 keeps **Set Frequency** stable while receiving: the button no longer flickers with receive/idle changes. Clicking while busy or disconnected gives an explanation; existing frequency-change safety checks remain.
+
+Build 52 fixes CAT reading after switching from Xara to modem73. Bundled modem73 reads frequency, mode and supported meters automatically with rigctld PTT, even in older profiles with CAT saved as off. External modem73 retains its optional CAT setting. Mode-selection and simulated CAT read/tune/meter checks passed; physical-radio confirmation remains.
 
 Build 51 fixes the Station Settings layout regression: the settings viewport stays bounded, long status messages cannot grow the page, and **Engine recovery…** opens a separate sheet. Render tests cover 1040×760 and 1300×900 in Default/CP/Crimson and recovery presentation. Update completion remains explicit: **Updated and selected automatically**. The selected version stays visible. Factory/previous-engine buttons are inside the separate **Engine recovery…** sheet; no second selection step follows an update. **Update modem73** handle audio recovery automatically. After Check Updates, it installs a verified gain-compatible engine, closes/reopens a running idle modem's saved radio devices and confirms the saved RX/TX gain. No zeroing gains or manual audio restart is needed. A stopped modem stays stopped. A failed install or audio restoration rolls back to the preceding engine and attempts to restore its audio.
 
