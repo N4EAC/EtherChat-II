@@ -4,7 +4,7 @@
 
 Amateur-radio chat for macOS with **modem73 and Xara bundled inside the app**. Select an engine in Station Settings; EtherChat II starts and stops it. No separate Xara application or modem installation is required.
 
-## Download 1.2.3 - build 53
+## Download 1.2.3 - build 54
 
 - [macOS Apple Silicon DMG](https://github.com/N4EAC/EtherChat-II/releases/download/v1.2.3/EtherChat-II-1.2.3-macOS-arm64.dmg)
 - [User manual PDF](https://github.com/N4EAC/EtherChat-II/releases/download/v1.2.3/EtherChat-II-User-Manual.pdf)
@@ -29,6 +29,8 @@ Modem Activity follows the selected engine. Bundled Xara supplies live audio lev
 5. Save and press **Start Modem**. Stop before switching engines.
 
 Both stations must use compatible modem waveforms. Xara and modem73 do not decode one another. Channel/direct features require a compatible application protocol. Chat packets are unacknowledged submissions.
+
+Build 54 removes panel outlines, uppercase section headings, and the chat subtitle, and cleans obsolete source comments and asset-generation notes. Quit now performs asynchronous cleanup without blocking the UI; closing the last window also quits. App-owned helpers receive a bounded graceful stop with a forced-stop fallback, while external rigctld services remain untouched. Quit/last-window-close, helper cleanup, theme layouts, chat scrolling and CAT regressions passed.
 
 Build 53 keeps **Set Frequency** stable while receiving: the button no longer flickers with receive/idle changes. Clicking while busy or disconnected gives an explanation; existing frequency-change safety checks remain.
 
