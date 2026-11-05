@@ -1,5 +1,7 @@
 # EtherChat II
 
+> **Notice:** EtherChat II is not compatible with VarAC and is not intended to be used in VarAC conversations. EtherChat II is an independent project.
+
 [![macOS](https://img.shields.io/badge/macOS-13%2B%20%C2%B7%20Apple%20Silicon-007AFF?logo=apple&logoColor=white)](https://github.com/N4EAC/EtherChat-II/releases/latest)
 
 Amateur-radio chat for macOS with **modem73 and Xara bundled inside the app**. Select an engine in Station Settings; EtherChat II starts and stops it. No separate Xara application or modem installation is required.
