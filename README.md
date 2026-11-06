@@ -6,7 +6,7 @@
 
 Amateur-radio chat for macOS with **modem73 and Xara bundled inside the app**. Select an engine in Station Settings; EtherChat II starts and stops it. No separate Xara application or modem installation is required.
 
-## Download 1.2.3 - build 55
+## Download 1.2.3 - build 56
 
 - [macOS Apple Silicon DMG](https://github.com/N4EAC/EtherChat-II/releases/download/v1.2.3/EtherChat-II-1.2.3-macOS-arm64.dmg)
 - [User manual PDF](https://github.com/N4EAC/EtherChat-II/releases/download/v1.2.3/EtherChat-II-User-Manual.pdf)
